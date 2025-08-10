@@ -68,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html suppressHydrationWarning lang="en" className="scroll-smooth">
       <body
         className={`
           ${geistSans.variable} 

@@ -20,7 +20,7 @@ export default function HeroSection() {
             alt="Industrial machinery and bearings"
             fill
             priority
-            className="object-cover"
+            className="object-cover object-right-top"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
         </motion.div>
@@ -36,7 +36,7 @@ export default function HeroSection() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
           >
             Powering Industry with
-            <span className="text-primary"> Precision Bearings</span>
+            <span className="text-secondary"> Precision Bearings</span>
           </motion.h1>
 
           <motion.p

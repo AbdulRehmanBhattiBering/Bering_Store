@@ -6,17 +6,17 @@ import { Search } from "lucide-react";
 
 export default function ProductsHero() {
   return (
-    <section className="relative min-h-[50vh] flex items-center">
+    <section className="relative min-h-[50vh] flex flex-col justify-end items-center">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          initial={{ scale: 1.1 }}
+          initial={{ scale: 1.05 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.8 }}
           className="relative w-full h-full"
         >
           <Image
-            src="/images/products-hero.jpg"
+            src="/images/hero-bg.jpg"
             alt="Industrial bearings collection"
             fill
             priority
@@ -47,7 +47,7 @@ export default function ProductsHero() {
           </motion.div>
 
           {/* Search Bar */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
@@ -66,16 +66,16 @@ export default function ProductsHero() {
                 <Search className="w-5 h-5 text-white/60" />
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 
       {/* Category Pills */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="absolute bottom-0 left-0 right-0 bg-black/30 backdrop-blur-sm"
+        className="w-full bg-black/30 backdrop-blur-sm"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-wrap gap-3">
@@ -96,7 +96,7 @@ export default function ProductsHero() {
             ))}
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }

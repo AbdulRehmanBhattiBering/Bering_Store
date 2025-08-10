@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, useScroll } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -48,13 +49,34 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-background/95 backdrop-blur-sm shadow-lg"
-          : "bg-transparent"
+          : " bg-gradient-to-b from-white/30 to-transparent"
       }`}
+      style={
+        {
+          "--scroll-text": isScrolled
+            ? "var(--foreground)"
+            : "var(--background)",
+        } as any
+      }
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold text-primary">
-            ARB Store
+            {isScrolled ? (
+              <Image
+                height={80}
+                width={120}
+                src={"/logo.png"}
+                alt="Abdul Rehman Bhatti Bering Store"
+              />
+            ) : (
+              <Image
+                height={80}
+                width={120}
+                src={"/logo-white.png"}
+                alt="Abdul Rehman Bhatti Bering Store"
+              />
+            )}
           </Link>
 
           {/* Desktop Navigation */}
@@ -69,7 +91,7 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className="text-foreground hover:text-primary transition-colors relative group"
+                  className="text-[var(--scroll-text)] hover:text-primary transition-colors relative group"
                 >
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
@@ -82,7 +104,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-[var(--scroll-text)] hover:text-primary transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

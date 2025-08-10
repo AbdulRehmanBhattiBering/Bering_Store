@@ -6,7 +6,7 @@ import MapSection from "@/components/contact/MapSection";
 export const metadata: Metadata = {
   title: "Contact Us - ARB Store | Get in Touch",
   description:
-    "Contact ARB Store for all your bearing needs. We provide expert guidance and solutions for industrial bearings. Located in Gowalmandi, Lahore.",
+    "Contact Abdul Rehman Bhatti Bearing Store for all your bearing needs. We provide expert guidance and solutions for industrial bearings. Located in Gowalmandi, Lahore.",
   keywords: [
     "contact ARB Store",
     "bearing supplier contact",

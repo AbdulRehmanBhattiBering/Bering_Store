@@ -20,7 +20,7 @@ export default function AboutPreview() {
             className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden"
           >
             <Image
-              src="/images/about-preview.jpg"
+              src="/images/about-preview.png"
               alt="Quality bearings manufacturing"
               fill
               className="object-cover"

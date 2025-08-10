@@ -6,7 +6,7 @@ import { Factory } from "lucide-react";
 
 export default function IndustriesHero() {
   return (
-    <section className="relative min-h-[60vh] flex items-center">
+    <section className="relative min-h-[70vh] flex items-center">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -16,7 +16,7 @@ export default function IndustriesHero() {
           className="relative w-full h-full"
         >
           <Image
-            src="/images/industries-hero.jpg"
+            src="/images/hero-bg.jpg"
             alt="Industrial manufacturing facility"
             fill
             priority
