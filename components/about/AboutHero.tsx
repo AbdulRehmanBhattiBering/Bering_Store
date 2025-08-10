@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <section className="relative min-h-[60vh] flex items-center">
+    <section className="relative min-h-[70vh] flex items-end justify-end flex-col">
       {/* Background with Parallax */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -15,7 +15,7 @@ export default function AboutHero() {
           className="relative w-full h-full"
         >
           <Image
-            src="/images/about-hero.jpg"
+            src="/images/hero-bg.jpg"
             alt="ARB Store facility"
             fill
             priority
@@ -26,7 +26,7 @@ export default function AboutHero() {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 mb-5">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export default function AboutHero() {
       </div>
 
       {/* Animated Stats */}
-      <div className="absolute bottom-0 left-0 right-0 bg-black/30 backdrop-blur-sm">
+      <div className="w-full bg-black/30 backdrop-blur-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[

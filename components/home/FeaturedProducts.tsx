@@ -11,7 +11,7 @@ const featuredProducts = [
     type: "Precision",
     description:
       "High-precision ball bearings designed for smooth rotation and reduced friction in various applications.",
-    imageUrl: "/images/ball-bearings.jpg",
+    imageUrl: "/images/ball-bering.jpg",
     href: "/products#ball-bearings",
   },
   {
@@ -20,7 +20,7 @@ const featuredProducts = [
     type: "Industrial",
     description:
       "Heavy-duty roller bearings engineered for high load capacity and excellent durability.",
-    imageUrl: "/images/roller-bearings.jpg",
+    imageUrl: "/images/roller-bering.jpg",
     href: "/products#roller-bearings",
   },
   {
@@ -29,7 +29,7 @@ const featuredProducts = [
     type: "Specialized",
     description:
       "Specialized thrust bearings designed to handle axial loads in critical applications.",
-    imageUrl: "/images/thrust-bearings.jpg",
+    imageUrl: "/images/thrust-bering.jpg",
     href: "/products#thrust-bearings",
   },
 ];
