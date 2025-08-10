@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Search } from "lucide-react";
+// import { Search } from "lucide-react";
 
 export default function ProductsHero() {
   return (
@@ -10,7 +10,7 @@ export default function ProductsHero() {
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          initial={{ scale: 1.05 }}
+          initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.8 }}
           className="relative w-full h-full"

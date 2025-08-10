@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ProductsHero from "@/components/products/ProductsHero";
 import ProductGrid from "@/components/products/ProductGrid";
 import CTASection from "@/components/home/CTASection";
+import ProductsWrapper from "@/components/layout/ProductsWrapper";
 
 export const metadata: Metadata = {
   title: "Products - ARB Store | High-Quality Industrial Bearings",

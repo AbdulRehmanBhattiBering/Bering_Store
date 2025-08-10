@@ -67,7 +67,7 @@ export default function IndustriesHero() {
               { value: "6+", label: "Major Industries" },
               { value: "1000+", label: "Projects Completed" },
               { value: "98%", label: "Client Satisfaction" },
-            ].map((stat, index) => (
+            ].map((stat) => (
               <div
                 key={stat.label}
                 className="bg-white/10 backdrop-blur-sm rounded-lg p-4"

@@ -20,7 +20,7 @@ export default function Navbar() {
   const { scrollY } = useScroll();
 
   useEffect(() => {
-    return scrollY.onChange((latest) => {
+    return scrollY.on("change", (latest) => {
       setIsScrolled(latest > 50);
     });
   }, [scrollY]);
@@ -56,7 +56,7 @@ export default function Navbar() {
           "--scroll-text": isScrolled
             ? "var(--foreground)"
             : "var(--background)",
-        } as any
+        } as React.CSSProperties
       }
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,6 +66,7 @@ export default function Navbar() {
               <Image
                 height={80}
                 width={120}
+                className="w-auto h-auto"
                 src={"/logo.png"}
                 alt="Abdul Rehman Bhatti Bering Store"
               />
@@ -73,6 +74,7 @@ export default function Navbar() {
               <Image
                 height={80}
                 width={120}
+                className="w-auto h-auto"
                 src={"/logo-white.png"}
                 alt="Abdul Rehman Bhatti Bering Store"
               />

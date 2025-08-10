@@ -34,11 +34,12 @@ export default function CompanyOverview() {
             />
 
             <p className="text-muted-foreground">
-              At ARB Store, we don't just sell bearings—we build partnerships.
-              Our knowledgeable team offers technical guidance, custom
-              solutions, and after-sales support to ensure our customers get
-              exactly what they need. We take pride in delivering on time, every
-              time, and in maintaining long-term relationships with our clients.
+              At ARB Store, we don&apos;t just sell bearings—we build
+              partnerships. Our knowledgeable team offers technical guidance,
+              custom solutions, and after-sales support to ensure our customers
+              get exactly what they need. We take pride in delivering on time,
+              every time, and in maintaining long-term relationships with our
+              clients.
             </p>
 
             <div className="space-y-4">
@@ -73,7 +74,7 @@ export default function CompanyOverview() {
                 className="relative h-48 rounded-lg overflow-hidden"
               >
                 <Image
-                  src="/images/quality-1.jpg"
+                  src="/images/qa-manufacturing.jpg"
                   alt="Quality testing process"
                   fill
                   className="object-cover"
@@ -87,7 +88,7 @@ export default function CompanyOverview() {
                 className="relative h-64 rounded-lg overflow-hidden"
               >
                 <Image
-                  src="/images/quality-2.jpg"
+                  src="/images/building.jpg"
                   alt="Bearing manufacturing"
                   fill
                   className="object-cover"
@@ -103,7 +104,7 @@ export default function CompanyOverview() {
                 className="relative h-64 rounded-lg overflow-hidden"
               >
                 <Image
-                  src="/images/quality-3.jpg"
+                  src="/images/velding.jpg"
                   alt="Quality control"
                   fill
                   className="object-cover"
@@ -117,7 +118,7 @@ export default function CompanyOverview() {
                 className="relative h-48 rounded-lg overflow-hidden"
               >
                 <Image
-                  src="/images/quality-4.jpg"
+                  src="/images/inspection.jpg"
                   alt="Technical inspection"
                   fill
                   className="object-cover"

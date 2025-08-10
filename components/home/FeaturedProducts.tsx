@@ -3,36 +3,8 @@
 import { motion } from "framer-motion";
 import SectionHeading from "../ui/SectionHeading";
 import ProductCard from "../ui/ProductCard";
-
-const featuredProducts = [
-  {
-    id: "1",
-    name: "Ball Bearings",
-    type: "Precision",
-    description:
-      "High-precision ball bearings designed for smooth rotation and reduced friction in various applications.",
-    imageUrl: "/images/ball-bering.jpg",
-    href: "/products#ball-bearings",
-  },
-  {
-    id: "2",
-    name: "Roller Bearings",
-    type: "Industrial",
-    description:
-      "Heavy-duty roller bearings engineered for high load capacity and excellent durability.",
-    imageUrl: "/images/roller-bering.jpg",
-    href: "/products#roller-bearings",
-  },
-  {
-    id: "3",
-    name: "Thrust Bearings",
-    type: "Specialized",
-    description:
-      "Specialized thrust bearings designed to handle axial loads in critical applications.",
-    imageUrl: "/images/thrust-bering.jpg",
-    href: "/products#thrust-bearings",
-  },
-];
+import { products } from "@/lib/products";
+import Link from "next/link";
 
 export default function FeaturedProducts() {
   const containerVariants = {
@@ -61,7 +33,7 @@ export default function FeaturedProducts() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {featuredProducts.map((product) => (
+          {products.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
         </motion.div>
@@ -72,12 +44,12 @@ export default function FeaturedProducts() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <a
+          <Link
             href="/products"
             className="inline-flex items-center justify-center px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-lg transition-colors duration-300"
           >
             View All Products
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
