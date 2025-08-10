@@ -8,14 +8,14 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+92-XXX-XXXXXXX",
-    href: "tel:+92XXXXXXXXXX",
+    value: "+92-3214610282",
+    href: "tel:+92-3214610282",
   },
   {
     icon: Mail,
     title: "Email",
-    value: "contact@arbstore.com",
-    href: "mailto:contact@arbstore.com",
+    value: "anwarulhaqbhatti716@gmail.com",
+    href: "mailto:anwarulhaqbhatti716@gmail.com",
   },
   {
     icon: MapPin,
@@ -27,7 +27,7 @@ const contactInfo = [
 
 export default function ContactHero() {
   return (
-    <section className="relative min-h-[50vh] flex items-center">
+    <section className="relative min-h-[70vh] flex items-end">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -37,7 +37,7 @@ export default function ContactHero() {
           className="relative w-full h-full"
         >
           <Image
-            src="/images/contact-hero.jpg"
+            src="/images/hero-bg.jpg"
             alt="ARB Store contact"
             fill
             priority
@@ -60,9 +60,9 @@ export default function ContactHero() {
             </h1>
             <div className="h-1 w-20 bg-primary mb-6" />
             <p className="text-lg text-white/90 mb-12">
-              Have questions about our products or need expert advice? We're
-              here to help. Contact us today and let our team assist you in
-              finding the perfect bearing solutions.
+              Have questions about our products or need expert advice?
+              We&apos;re here to help. Contact us today and let our team assist
+              you in finding the perfect bearing solutions.
             </p>
           </motion.div>
 
@@ -87,7 +87,12 @@ export default function ContactHero() {
                     {info.title}
                   </h3>
                 </div>
-                <p className="text-white/80">{info.value}</p>
+                <p
+                  className="text-white/80 text-wrap"
+                  style={{ overflowWrap: "anywhere" }}
+                >
+                  {info.value}
+                </p>
               </motion.a>
             ))}
           </div>

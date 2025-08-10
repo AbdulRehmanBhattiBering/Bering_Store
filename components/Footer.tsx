@@ -18,18 +18,18 @@ const footerLinks = [
   {
     title: "Products",
     links: [
-      { label: "Ball Bearings", href: "/products#ball-bearings" },
-      { label: "Roller Bearings", href: "/products#roller-bearings" },
-      { label: "Thrust Bearings", href: "/products#thrust-bearings" },
-      { label: "Plain Bearings", href: "/products#plain-bearings" },
+      { label: "Ball Bearings", href: "/products?p=ball-bearings" },
+      { label: "Roller Bearings", href: "/products?p=roller-bearings" },
+      { label: "Thrust Bearings", href: "/products?p=thrust-bearings" },
+      { label: "Plain Bearings", href: "/products?p=plain-bearings" },
     ],
   },
 ];
 
 const contactInfo = {
   address: "Main Bazar gurugan Nagar Al Habib Bank Gowalmandi Lahore",
-  phone: "+92-XXX-XXXXXXX",
-  email: "contact@arbstore.com",
+  phone: "+92-3214610282",
+  email: "anwarulhaqbhatti716@gmail.com",
 };
 
 const socialLinks = [
@@ -86,7 +86,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm opacity-90 hover:opacity-100 hover:text-accent-foreground transition-colors"
+                      className="text-sm opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -108,11 +108,21 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <span className="text-sm opacity-90">{contactInfo.phone}</span>
+                <Link
+                  href={`tel:${contactInfo.phone}`}
+                  className="text-sm opacity-90"
+                >
+                  {contactInfo.phone}
+                </Link>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 flex-shrink-0" />
-                <span className="text-sm opacity-90">{contactInfo.email}</span>
+                <Link
+                  href={`mailto:${contactInfo.email}`}
+                  className="text-sm opacity-90"
+                >
+                  {contactInfo.email}
+                </Link>
               </li>
             </ul>
           </motion.div>
@@ -125,7 +135,8 @@ export default function Footer() {
         >
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-sm opacity-90">
-              © {new Date().getFullYear()} ARB Store. All rights reserved.
+              © {new Date().getFullYear()} Abdul Rehman Bhatti Bering Store. All
+              rights reserved.
             </p>
             <div className="flex space-x-6">
               {socialLinks.map(({ Icon, href, label }) => (

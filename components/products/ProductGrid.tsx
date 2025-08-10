@@ -3,70 +3,74 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ProductCard from "../ui/ProductCard";
+import { products } from "@/lib/products";
 
-const products = [
-  {
-    id: "1",
-    name: "Deep Groove Ball Bearings",
-    type: "Ball Bearings",
-    description:
-      "Versatile bearings suitable for high-speed applications with radial and axial loads.",
-    imageUrl: "/images/deep-groove-ball.jpg",
-    href: "/products/deep-groove-ball-bearings",
-  },
-  {
-    id: "2",
-    name: "Angular Contact Ball Bearings",
-    type: "Ball Bearings",
-    description:
-      "Designed for combined loads and high-precision applications like machine tool spindles.",
-    imageUrl: "/images/angular-contact.jpg",
-    href: "/products/angular-contact-bearings",
-  },
-  {
-    id: "3",
-    name: "Cylindrical Roller Bearings",
-    type: "Roller Bearings",
-    description:
-      "High load capacity bearings ideal for heavy industrial machinery.",
-    imageUrl: "/images/cylindrical-roller.jpg",
-    href: "/products/cylindrical-roller-bearings",
-  },
-  {
-    id: "4",
-    name: "Tapered Roller Bearings",
-    type: "Roller Bearings",
-    description:
-      "Perfect for applications with combined radial and axial loads.",
-    imageUrl: "/images/tapered-roller.jpg",
-    href: "/products/tapered-roller-bearings",
-  },
-  {
-    id: "5",
-    name: "Thrust Ball Bearings",
-    type: "Thrust Bearings",
-    description:
-      "Specifically designed to handle axial loads in one direction.",
-    imageUrl: "/images/thrust-ball.jpg",
-    href: "/products/thrust-ball-bearings",
-  },
-  {
-    id: "6",
-    name: "Plain Bushings",
-    type: "Plain Bearings",
-    description:
-      "Simple, reliable bearings for low-speed applications with good wear resistance.",
-    imageUrl: "/images/plain-bushings.jpg",
-    href: "/products/plain-bushings",
-  },
-];
+// const products = [
+//   {
+//     id: "1",
+//     name: "Deep Groove Ball Bearings",
+//     type: "Ball Bearings",
+//     description:
+//       "Versatile bearings suitable for high-speed applications with radial and axial loads.",
+//     imageUrl: "/images/deep-groove-ball.jpg",
+//     href: "/products/deep-groove-ball-bearings",
+//   },
+//   {
+//     id: "2",
+//     name: "Angular Contact Ball Bearings",
+//     type: "Ball Bearings",
+//     description:
+//       "Designed for combined loads and high-precision applications like machine tool spindles.",
+//     imageUrl: "/images/angular-contact.jpg",
+//     href: "/products/angular-contact-bearings",
+//   },
+//   {
+//     id: "3",
+//     name: "Cylindrical Roller Bearings",
+//     type: "Roller Bearings",
+//     description:
+//       "High load capacity bearings ideal for heavy industrial machinery.",
+//     imageUrl: "/images/cylindrical-roller.jpg",
+//     href: "/products/cylindrical-roller-bearings",
+//   },
+//   {
+//     id: "4",
+//     name: "Tapered Roller Bearings",
+//     type: "Roller Bearings",
+//     description:
+//       "Perfect for applications with combined radial and axial loads.",
+//     imageUrl: "/images/tapered-roller.jpg",
+//     href: "/products/tapered-roller-bearings",
+//   },
+//   {
+//     id: "5",
+//     name: "Thrust Ball Bearings",
+//     type: "Thrust Bearings",
+//     description:
+//       "Specifically designed to handle axial loads in one direction.",
+//     imageUrl: "/images/thrust-ball.jpg",
+//     href: "/products/thrust-ball-bearings",
+//   },
+//   {
+//     id: "6",
+//     name: "Plain Bushings",
+//     type: "Plain Bearings",
+//     description:
+//       "Simple, reliable bearings for low-speed applications with good wear resistance.",
+//     imageUrl: "/images/plain-bushings.jpg",
+//     href: "/products/plain-bushings",
+//   },
+// ];
 
 const categories = [
   "All Products",
-  "Ball Bearings",
+  "Precision",
+  "Industrial",
+  "Specialized",
   "Roller Bearings",
-  "Thrust Bearings",
-  "Plain Bearings",
+  "Plain Bushings",
+  "Angular Bearing",
+  "Journal",
 ];
 
 export default function ProductGrid() {
@@ -118,14 +122,14 @@ export default function ProductGrid() {
 
         {/* Products Grid */}
         <motion.div
-          layout
+          //   layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <AnimatePresence>
             {filteredProducts.map((product) => (
               <motion.div
                 key={product.id}
-                layout
+                // layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}

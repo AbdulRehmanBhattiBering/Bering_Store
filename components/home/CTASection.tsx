@@ -16,7 +16,7 @@ export default function CTASection() {
           transition={{ duration: 0.8 }}
           className="relative w-full h-full"
           style={{
-            backgroundImage: "url(/images/cta-bg.jpg)",
+            backgroundImage: "url(/images/bearing.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -63,7 +63,7 @@ export default function CTASection() {
               Get in Touch
             </Link>
             <a
-              href="tel:+92XXXXXXXXXX"
+              href="tel:+92-3214610282"
               className="inline-flex items-center px-8 py-3 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-colors"
             >
               <Phone className="w-5 h-5 mr-2" />

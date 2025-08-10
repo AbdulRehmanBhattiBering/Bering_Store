@@ -1,0 +1,22 @@
+{
+  "name": "ARB Store - High Quality Bearings Supplier",
+  "short_name": "ARB Store",
+  "description": "Abdul Rehman Bhatti Bearing Store - Specializing in high-quality bearings for smooth, efficient, and reliable machinery performance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

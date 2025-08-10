@@ -103,9 +103,9 @@ export default function WhyChooseUs() {
           className="mt-12 text-center"
         >
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            When you choose ARB Store, you're choosing reliability, precision,
-            and excellence. We're here to keep your machines moving and your
-            business growing.
+            When you choose ARB Store, you&apos;re choosing reliability,
+            precision, and excellence. We&apos;re here to keep your machines
+            moving and your business growing.
           </p>
         </motion.div>
       </div>

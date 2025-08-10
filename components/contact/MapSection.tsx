@@ -19,7 +19,7 @@ export default function MapSection() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative h-[400px] rounded-xl overflow-hidden shadow-lg"
+            className="h-[400px] rounded-xl overflow-hidden shadow-lg lg:sticky lg:top-20 relative"
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.5675390825188!2d74.3191!3d31.5825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDM0JzU3LjAiTiA3NMKwMTknMDguOCJF!5e0!3m2!1sen!2s!4v1628000000000!5m2!1sen!2s"
@@ -72,7 +72,7 @@ export default function MapSection() {
                 <Phone className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium">Phone Support</p>
-                  <p className="text-muted-foreground">+92-XXX-XXXXXXX</p>
+                  <p className="text-muted-foreground">+92-3214610282</p>
                 </div>
               </div>
             </div>
@@ -81,9 +81,9 @@ export default function MapSection() {
             <div className="p-6 bg-primary/5 rounded-lg">
               <h4 className="text-lg font-semibold mb-2">Getting Here</h4>
               <p className="text-muted-foreground">
-                We're conveniently located in the heart of Lahore's business
-                district. Look for the Al Habib Bank building in Gowalmandi, and
-                you'll find us right in the main bazaar.
+                We&apos;re conveniently located in the heart of Lahore&apos;s
+                business district. Look for the Al Habib Bank building in
+                Gowalmandi, and you&apos;ll find us right in the main bazaar.
               </p>
             </div>
           </motion.div>

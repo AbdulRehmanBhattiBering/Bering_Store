@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { usePathname } from "next/navigation";
+import { usePathname, useSelectedLayoutSegments } from "next/navigation";
 import { pageTransition } from "@/lib/animations";
 
 interface AnimatedLayoutProps {
@@ -9,12 +9,13 @@ interface AnimatedLayoutProps {
 }
 
 export default function AnimatedLayout({ children }: AnimatedLayoutProps) {
-  const pathname = usePathname();
+  const segments = useSelectedLayoutSegments();
+  const key = "/" + segments.join("/");
 
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={pathname}
+        key={key}
         initial="hidden"
         animate="enter"
         exit="exit"
