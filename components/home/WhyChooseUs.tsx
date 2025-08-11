@@ -7,6 +7,7 @@ import {
   Clock,
   HeartHandshake,
   Settings,
+  Ship,
   Truck,
 } from "lucide-react";
 import SectionHeading from "../ui/SectionHeading";
@@ -40,9 +41,9 @@ const features = [
     description: "Tailored bearing solutions for unique applications",
   },
   {
-    icon: Truck,
-    title: "Nationwide Service",
-    description: "Serving clients across Pakistan with reliable logistics",
+    icon: Ship,
+    title: "Worldwide Export",
+    description: "Serving clients across world with reliable logistics",
   },
 ];
 
