@@ -14,8 +14,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "anwarulhaqbhatti716@gmail.com",
-    href: "mailto:anwarulhaqbhatti716@gmail.com",
+    value: "abdulrahmanbhattibearingstore@gmail.com",
+    href: "mailto:abdulrahmanbhattibearingstore@gmail.com",
   },
   {
     icon: MapPin,
@@ -27,7 +27,7 @@ const contactInfo = [
 
 export default function ContactHero() {
   return (
-    <section className="relative min-h-[70vh] flex items-end">
+    <section className="relative min-h-[70vh] pt-20 md:pt-0 flex items-end">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -77,9 +77,9 @@ export default function ContactHero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 + 0.3, duration: 0.6 }}
-                className="group bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all"
+                className="group bg-white/10 backdrop-blur-sm rounded-lg p-6 md:py-6 py-2 hover:bg-white/20 transition-all"
               >
-                <div className="flex items-center gap-4 mb-3">
+                <div className="flex items-center gap-4 md:mb-3 mb-1">
                   <div className="p-2 rounded-lg bg-primary/20 text-primary-foreground">
                     <info.icon className="w-6 h-6" />
                   </div>

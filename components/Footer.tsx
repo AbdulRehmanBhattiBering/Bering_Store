@@ -29,7 +29,7 @@ const footerLinks = [
 const contactInfo = {
   address: "Main Bazar gurugan Nagar Al Habib Bank Gowalmandi Lahore",
   phone: "+92-3214610282",
-  email: "anwarulhaqbhatti716@gmail.com",
+  email: "abdulrahmanbhattibearingstore@gmail.com",
 };
 
 const socialLinks = [
@@ -119,7 +119,7 @@ export default function Footer() {
                 <Mail className="w-5 h-5 flex-shrink-0" />
                 <Link
                   href={`mailto:${contactInfo.email}`}
-                  className="text-sm opacity-90"
+                  className="text-sm opacity-90 wrap-anywhere"
                 >
                   {contactInfo.email}
                 </Link>

@@ -52,8 +52,8 @@ export default function AboutHero() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "20+", label: "Years Experience" },
-              { value: "1000+", label: "Happy Clients" },
+              { value: "25+", label: "Years Experience" },
+              { value: "5000+", label: "Happy Clients" },
               { value: "5000+", label: "Products" },
               { value: "50+", label: "Expert Staff" },
             ].map((stat, index) => (
