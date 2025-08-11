@@ -42,7 +42,7 @@ const features = [
   },
   {
     icon: Ship,
-    title: "Worldwide Export",
+    title: "Worldwide Export/Import",
     description: "Serving clients across world with reliable logistics",
   },
 ];

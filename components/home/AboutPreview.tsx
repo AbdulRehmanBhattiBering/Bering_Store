@@ -37,7 +37,7 @@ export default function AboutPreview() {
                 transition={{ delay: 0.3 }}
                 className="bg-white/10 backdrop-blur-sm p-4 rounded-lg"
               >
-                <div className="text-2xl font-bold text-white">20+</div>
+                <div className="text-2xl font-bold text-white">25+</div>
                 <div className="text-sm text-white/80">Years Experience</div>
               </motion.div>
               <motion.div
@@ -47,7 +47,7 @@ export default function AboutPreview() {
                 transition={{ delay: 0.4 }}
                 className="bg-white/10 backdrop-blur-sm p-4 rounded-lg"
               >
-                <div className="text-2xl font-bold text-white">1000+</div>
+                <div className="text-2xl font-bold text-white">10000+</div>
                 <div className="text-sm text-white/80">Happy Clients</div>
               </motion.div>
             </div>
