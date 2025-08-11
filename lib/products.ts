@@ -77,7 +77,7 @@ export const products = [
     type: "Journal",
     description:
       "Simple, reliable bearings for low-speed applications with good wear resistance.",
-    imageUrl: "/images/Journal.jpg",
-    href: "/products?p=Journal-bearing",
+    imageUrl: "/images/journal-bearing.jpg",
+    href: "/products?p=journal-bearing",
   },
 ];
