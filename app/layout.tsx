@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedLayout from "@/components/layout/AnimatedLayout";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -88,6 +90,8 @@ export default function RootLayout({
           motion-safe:scroll-smooth
         `}
       >
+        <Analytics />
+        <SpeedInsights />
         <AnimatedLayout>
           <Navbar />
           <main className="flex-grow">{children}</main>
