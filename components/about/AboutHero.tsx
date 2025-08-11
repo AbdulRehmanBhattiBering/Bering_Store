@@ -53,7 +53,7 @@ export default function AboutHero() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { value: "25+", label: "Years Experience" },
-              { value: "5000+", label: "Happy Clients" },
+              { value: "10000+", label: "Happy Clients" },
               { value: "5000+", label: "Products" },
               { value: "50+", label: "Expert Staff" },
             ].map((stat, index) => (
